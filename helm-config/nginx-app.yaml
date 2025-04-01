@@ -9,7 +9,7 @@ spec:
     repoURL: https://github.com/danielparamount/argocd-nginx-demo
     targetRevision: main
     path: helm-config
-    helm:
+    # helm:
       # values: |
       #   replicaCount: 2
       #   service:
@@ -17,8 +17,8 @@ spec:
       #     port: 8080
       #   ingress:
       #     enabled: false
-      valueFiles:
-        - values.yaml
+      # valueFiles:
+      #   - values.yaml
   destination:
     server: https://kubernetes.default.svc
     namespace: default
